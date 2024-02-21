@@ -18,7 +18,7 @@ services:
       WORDPRESS_DB_HOST: database
       WORDPRESS_DB_NAME: "${MYSQL_DATABASE}"
       WORDPRESS_DB_USER: "${MYSQL_USER}"
-      WORDPRESS_DB_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+      WORDPRESS_DB_PASSWORD: "${MYSQL_PASSWORD}"
     depends_on:
       - database
     networks:
@@ -37,7 +37,7 @@ services:
       WORDPRESS_DB_HOST: database
       WORDPRESS_DB_NAME: "${MYSQL_DATABASE}"
       WORDPRESS_DB_USER: "${MYSQL_USER}"
-      WORDPRESS_DB_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+      WORDPRESS_DB_PASSWORD: "${MYSQL_PASSWORD}"
     depends_on:
       - database
       - wordpress
@@ -115,7 +115,7 @@ networks:
     name: wordpress_net_${COMPOSE_PROJECT_NAME}
     driver: bridge
     driver_opts:
-      com.docker.network.bridge.name: br-wordpress-net
+      com.docker.network.bridge.name: br-wp-net
     ipam:
       driver: default
       config:
