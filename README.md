@@ -1,5 +1,12 @@
 # WPDC - WordPress Docker Compose
 
+### Changes in this fork
+- Ports and passwords in env
+- Docker containers named
+- Docker containers configured with static IP addresses
+- PHP configured to not display errors
+- Container memory limits
+
 Easy WordPress development with Docker and Docker Compose.
 
 With this project you can quickly run the following:
