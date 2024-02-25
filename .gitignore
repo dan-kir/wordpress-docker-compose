@@ -5,6 +5,4 @@
 /logs/*
 .DS_Store
 /wp-data/*
-!/wp-app/wp-content/
-!/wp-app/wp-content/plugins/
 !/wp-app/wp-content/plugins/mail-masta/
