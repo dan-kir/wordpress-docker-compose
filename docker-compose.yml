@@ -2,7 +2,7 @@ version: '3'
 
 services:
   wordpress:
-    image: wordpress:latest # https://hub.docker.com/_/wordpress/
+    image: wordpress:6.0 # https://hub.docker.com/_/wordpress/
     container_name: "${COMPOSE_PROJECT_NAME}-wordpress"
     mem_limit: 262144000
     restart: "always"
