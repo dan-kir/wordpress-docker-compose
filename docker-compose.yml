@@ -89,7 +89,7 @@ services:
     ]
     volumes:
       - ./wp-data:/docker-entrypoint-initdb.d
-      - db_data:/var/lib/mysql
+      - ./mysql-data:/var/lib/mysql
       - ${MYSQL_LOG_DIR-./logs/mysql}:/var/log/mysql
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
