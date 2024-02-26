@@ -1,7 +1,6 @@
 /.env
 /.vscode
 /wp-app/*
-/wp-data/*
 /logs/*
 .DS_Store
-!/wp-app/wp-content/
+/mysql-data/*
